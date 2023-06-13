@@ -7,6 +7,8 @@ import com.project.FacilTren.FacilTren.ProjectApi.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProjectImpl implements ProjectService {
 
@@ -16,5 +18,10 @@ public class ProjectImpl implements ProjectService {
     @Override
     public ProjectModel createProject(ProjectModel projectModel) {
         return projectRepo.saveAndFlush(projectModel);
+    }
+
+    @Override
+    public List<ProjectModel> getAllProjects() {
+        return projectRepo.findAll();
     }
 }

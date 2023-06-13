@@ -27,9 +27,9 @@ public class ProjectModel {
 
     @NotNull
     @Column(unique = true)
-    private String ProjectCode;
+    private String projectCode;
 
-    private String ProjectName;
+    private String projectName;
 
     @JsonIgnore
     @ManyToMany(mappedBy = "assignedProjects")
