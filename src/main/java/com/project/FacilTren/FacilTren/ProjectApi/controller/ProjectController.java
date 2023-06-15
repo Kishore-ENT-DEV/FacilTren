@@ -31,4 +31,10 @@ public class ProjectController {
         projectModels = projectService.getAllProjects();
         return new ResponseEntity(projectModels, HttpStatus.OK);
     }
+
+    @PutMapping(value = "/{projectId}/Teams/{teamId}",produces = MediaType.APPLICATION_JSON_VALUE)
+    public ProjectModel assignProject(@PathVariable Long projectId, @PathVariable Long teamId){
+        return projectService.assignTeams(projectId,teamId);
+
+    }
 }

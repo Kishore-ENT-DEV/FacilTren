@@ -3,7 +3,6 @@ package com.project.FacilTren.FacilTren.UserApi.services.userImpl;
 
 import com.project.FacilTren.FacilTren.ProjectApi.model.ProjectModel;
 import com.project.FacilTren.FacilTren.ProjectApi.repo.ProjectRepo;
-import com.project.FacilTren.FacilTren.ProjectApi.service.projectImpl.ProjectImpl;
 import com.project.FacilTren.FacilTren.UserApi.model.UserModel;
 import com.project.FacilTren.FacilTren.UserApi.repo.UserRepo;
 import com.project.FacilTren.FacilTren.UserApi.services.UserService;

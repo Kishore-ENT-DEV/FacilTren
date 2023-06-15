@@ -31,7 +31,7 @@ public class UserModel {
         @NonNull
         private String userType;
 
-        @ManyToMany
+        @ManyToMany(fetch = FetchType.EAGER)
         @JoinTable(name = "USER_PROJECT",
         joinColumns = @JoinColumn(name = "employee_id"), inverseJoinColumns = @JoinColumn(name = "project_id"))
         private Set<ProjectModel> assignedProjects = new HashSet<>();

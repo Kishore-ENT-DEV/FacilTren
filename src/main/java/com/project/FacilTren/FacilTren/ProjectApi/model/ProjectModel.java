@@ -2,6 +2,7 @@ package com.project.FacilTren.FacilTren.ProjectApi.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.project.FacilTren.FacilTren.TeamApi.model.TeamModel;
 import com.project.FacilTren.FacilTren.UserApi.model.UserModel;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
@@ -30,6 +31,11 @@ public class ProjectModel {
     private String projectCode;
 
     private String projectName;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "PROJECT_TEAM",
+            joinColumns = @JoinColumn(name = "project_id"), inverseJoinColumns = @JoinColumn(name = "team_id"))
+    private Set<TeamModel> assignedTeams = new HashSet<>();
 
     @JsonIgnore
     @ManyToMany(mappedBy = "assignedProjects")

@@ -10,4 +10,6 @@ public interface ProjectService {
     public ProjectModel createProject (ProjectModel projectModel);
 
     List<ProjectModel> getAllProjects();
+
+    ProjectModel assignTeams(Long projectId, Long teamId);
 }
