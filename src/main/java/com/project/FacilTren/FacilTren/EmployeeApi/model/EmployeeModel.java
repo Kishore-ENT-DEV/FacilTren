@@ -1,4 +1,4 @@
-package com.project.FacilTren.FacilTren.UserApi.model;
+package com.project.FacilTren.FacilTren.EmployeeApi.model;
 
 
 import com.project.FacilTren.FacilTren.ProjectApi.model.ProjectModel;
@@ -18,7 +18,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserModel {
+public class EmployeeModel {
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)

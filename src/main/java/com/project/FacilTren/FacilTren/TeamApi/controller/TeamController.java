@@ -1,11 +1,8 @@
 package com.project.FacilTren.FacilTren.TeamApi.controller;
 
 
-import com.project.FacilTren.FacilTren.ProjectApi.model.ProjectModel;
-import com.project.FacilTren.FacilTren.ProjectApi.service.ProjectService;
 import com.project.FacilTren.FacilTren.TeamApi.model.TeamModel;
 import com.project.FacilTren.FacilTren.TeamApi.service.TeamService;
-import com.project.FacilTren.FacilTren.UserApi.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

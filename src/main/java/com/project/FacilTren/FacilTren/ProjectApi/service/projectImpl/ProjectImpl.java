@@ -6,7 +6,6 @@ import com.project.FacilTren.FacilTren.ProjectApi.repo.ProjectRepo;
 import com.project.FacilTren.FacilTren.ProjectApi.service.ProjectService;
 import com.project.FacilTren.FacilTren.TeamApi.model.TeamModel;
 import com.project.FacilTren.FacilTren.TeamApi.repo.TeamRepo;
-import com.project.FacilTren.FacilTren.UserApi.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

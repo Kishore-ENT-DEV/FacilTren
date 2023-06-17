@@ -3,7 +3,7 @@ package com.project.FacilTren.FacilTren.ProjectApi.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.project.FacilTren.FacilTren.TeamApi.model.TeamModel;
-import com.project.FacilTren.FacilTren.UserApi.model.UserModel;
+import com.project.FacilTren.FacilTren.EmployeeApi.model.EmployeeModel;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -39,5 +39,5 @@ public class ProjectModel {
 
     @JsonIgnore
     @ManyToMany(mappedBy = "assignedProjects")
-    private Set<UserModel> projects = new HashSet<>();
+    private Set<EmployeeModel> projects = new HashSet<>();
 }

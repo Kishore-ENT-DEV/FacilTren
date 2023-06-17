@@ -3,7 +3,7 @@ package com.project.FacilTren.FacilTren.ProjectApi.controller;
 
 import com.project.FacilTren.FacilTren.ProjectApi.model.ProjectModel;
 import com.project.FacilTren.FacilTren.ProjectApi.service.ProjectService;
-import com.project.FacilTren.FacilTren.UserApi.model.UserModel;
+import com.project.FacilTren.FacilTren.EmployeeApi.model.EmployeeModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -26,7 +26,7 @@ public class ProjectController {
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<UserModel> getUsers(){
+    public ResponseEntity<EmployeeModel> getUsers(){
         List<ProjectModel> projectModels = null;
         projectModels = projectService.getAllProjects();
         return new ResponseEntity(projectModels, HttpStatus.OK);
